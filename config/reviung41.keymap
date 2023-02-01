@@ -10,6 +10,19 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        gresc: back_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACK_DELETE";
+            binding-cells = <39>;
+            bindings = <&kp BKSP>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
