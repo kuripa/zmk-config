@@ -14,7 +14,7 @@
         gresc: back_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DELETE";
-            binding-cells = <39>;
+            #binding-cells = <39>;
             bindings =
                 <&kp BKSP>,
                 <&kp DELETE>;
