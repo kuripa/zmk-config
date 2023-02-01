@@ -11,15 +11,13 @@
 
 / {
     behaviors {
-        gresc: back_delete {
+        bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACK_DELETE";
-            #binding-cells = <39>;
-            bindings =
-                <&kp BKSP>,
-                <&kp DELETE>;
-
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 };
