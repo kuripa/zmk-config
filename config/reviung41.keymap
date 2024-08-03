@@ -46,10 +46,10 @@
             //                       |     | ADJ | BKSP |    |     |
 
             bindings = <
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans               &trans         &trans  &trans  &trans  &trans  &kp DEL
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH             &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT              &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans
-                        &trans                &mo 3                            &kp ENTER                 &trans  &trans
+&kp TILDE  &kp EXCL   &kp AT            &kp HASH         &kp DOLLAR             &kp PERCENT                   &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp STAR      &kp UNDER  &kp EQUAL  &kp DEL
+&trans     &kp TILDE  &kp SINGLE_QUOTE  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET              &kp PLUS           &sk LEFT_ALT   &sk LEFT_GUI  &sk LCTRL  &trans     &trans
+&trans     &trans     &trans            &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET             &kp PIPE           &kp MINUS      &kp EQUAL     &trans     &trans     &trans
+                                        &trans           &mo 3                                     &kp ENTER                     &trans         &trans
             >;
         };
 
