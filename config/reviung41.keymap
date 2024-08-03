@@ -100,5 +100,14 @@
                                                    &trans           &trans                   &tog 5                &trans        &trans
             >;
         };
+
+        layer_6 {
+            bindings = <
+&kp  &kp  &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES       &kp  &kp LESS_THAN  &kp GREATER_THAN  &kp  &kp  &kp
+&kp  &kp  &kp               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp                     &kp  &kp PLUS       &kp MINUS         &kp  &kp  &kp
+&kp  &kp  &kp               &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp                     &kp  &kp STAR       &kp SLASH         &kp  &kp  &kp
+                            &kp                   &kp                                       &kp       &kp            &kp
+            >;
+        };
     };
 };
