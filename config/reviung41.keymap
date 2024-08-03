@@ -36,10 +36,10 @@
             //                       |     |     | RET | ADJ |     |
 
             bindings = <
-&trans  &trans     &trans     &kp ESCAPE  &trans        &trans           &trans         &kp N7        &kp N8        &kp N9        &trans     &kp DEL
-&trans  &kp LCTRL  &kp LCTRL  &kp LGUI    &kp LEFT_ALT  &trans           &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
-&trans  &trans     &trans     &trans      &trans        &trans           &kp BACKSPACE  &kp N4        &kp N5        &kp N6        &kp PSCRN  &mt RSHFT SPACE
-                              &trans      &trans                &kp RET                 &trans        &sl 3
+&trans  &trans     &trans     &kp ESCAPE  &trans        &trans           &trans         &kp HOME       &kp END      &trans     &trans     &kp DEL
+&trans  &sk LCTRL  &kp LCTRL  &kp LGUI    &kp LEFT_ALT  &trans           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans     &trans
+&trans  &trans     &trans     &caps_word  &trans        &trans           &kp BACKSPACE  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp PSCRN  &trans
+                              &trans      &trans                &kp RET                 &trans         &trans
             >;
         };
 
@@ -51,10 +51,10 @@
             //                       |     | ADJ | BKSP |    |     |
 
             bindings = <
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans              &trans    &trans    &trans        &trans     &trans  &kp DEL
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH            &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT             &trans    &trans    &trans        &trans     &trans  &trans
-                        &trans                &trans                           &kp BSPC            &trans    &trans
+&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans               &trans         &kp N7        &kp N8        &kp N9        &trans  &kp DEL
+&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH             &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT              &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+                        &trans                &kp LEFT_GUI                     &kp ENTER                 &trans        &trans
             >;
         };
 
