@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <19 20 19 20>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,7 +47,7 @@
 
             bindings = <
 &trans  &trans     &trans     &kp ESCAPE  &trans        &trans           &trans         &kp HOME       &kp END      &trans     &trans     &kp DEL
-&trans  &sk LCTRL  &kp LCTRL  &kp LGUI    &kp LEFT_ALT  &trans           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans     &trans
+&trans  &sk LCTRL  &kp LCTRL  &sk LGUI    &sk LEFT_ALT  &trans           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans     &trans
 &trans  &trans     &trans     &caps_word  &trans        &trans           &kp BACKSPACE  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp PSCRN  &trans
                               &trans      &trans                &kp RET                 &trans         &trans
             >;
