@@ -33,23 +33,8 @@
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI  &mt RSHIFT ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mo 3
-                              &kp LALT  &mo 1         &kp SPACE         &mo 2  &kp RGUI
-            >;
-        };
-
-        nav_layer {
-            // ------------------------------------------------------------------------------------
-            // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      DEL    |
-            // |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |       ~     |
-            // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(SPACE) |
-            //                       |     |     | RET | ADJ |     |
-
-            bindings = <
-&trans  &trans     &trans     &kp ESCAPE  &trans        &trans           &trans         &kp HOME       &kp END      &trans     &trans     &kp DEL
-&trans  &sk LCTRL  &kp LCTRL  &sk LGUI    &sk LEFT_ALT  &trans           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans     &trans
-&trans  &trans     &trans     &caps_word  &trans        &trans           &kp BACKSPACE  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp PSCRN  &trans
-                              &trans      &trans                &kp RET                 &trans         &trans
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
+                              &kp LALT  &mo 2         &kp SPACE         &mo 1  &kp RGUI
             >;
         };
 
@@ -61,17 +46,41 @@
             //                       |     | ADJ | BKSP |    |     |
 
             bindings = <
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans               &trans         &kp N7        &kp N8        &kp N9        &trans  &kp DEL
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH             &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT              &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-                        &trans                &kp LEFT_GUI                     &kp ENTER                 &trans        &trans
+&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans               &trans         &trans  &trans  &trans  &trans  &kp DEL
+&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH             &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT              &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans
+                        &trans                &mo 3                            &kp ENTER                 &trans  &trans
+            >;
+        };
+
+        num_layer {
+            bindings = <
+&trans  &trans  &trans     &kp ESC   &trans    &trans             &trans         &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &sk LCTRL  &sk LGUI  &sk LALT  &trans             &kp N0         &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans     &trans    &trans    &trans             &kp BACKSPACE  &kp N4  &kp N5  &kp N6  &trans  &trans
+                           &trans    &trans            &kp ENTER                 &mo 3   &trans
+            >;
+        };
+
+        nav_layer {
+            // ------------------------------------------------------------------------------------
+            // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      DEL    |
+            // |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |       ~     |
+            // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(SPACE) |
+            //                       |     |     | RET | ADJ |     |
+
+            bindings = <
+&trans  &trans  &trans     &kp ESCAPE  &trans        &trans          &trans         &kp HOME       &kp END      &trans     &trans     &kp DEL
+&trans  &trans  &sk LCTRL  &sk LGUI    &sk LEFT_ALT  &trans          &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans     &trans
+&trans  &trans  &trans     &caps_word  &trans        &trans          &kp BACKSPACE  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp PSCRN  &trans
+                           &trans      &trans                &trans                 &trans         &trans
             >;
         };
 
         function_layer {
             bindings = <
 &kp F1  &kp F2            &kp F3      &kp F4      &kp F5      &kp F6              &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-&trans  &kp LG(NUMBER_1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)          &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &mo 4
+&trans  &kp LG(NUMBER_1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)          &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &mo 5
 &trans  &trans            &trans      &trans      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
                                       &trans      &trans                  &trans              &trans      &trans
             >;
@@ -88,7 +97,7 @@
 &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none   &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none   &none                    &none         &none         &none         &none         &none         &none
 &none            &none            &none            &none            &none   &none                    &sys_reset    &none         &none         &none         &none         &none
-                                                   &trans           &trans                   &tog 4                &trans        &trans
+                                                   &trans           &trans                   &tog 5                &trans        &trans
             >;
         };
     };
