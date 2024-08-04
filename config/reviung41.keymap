@@ -31,34 +31,28 @@
             //                         | ALT | LWR | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI  &mt RSHIFT ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                              &mo 3  &mo 2         &kp SPACE         &mo 6  &kp RGUI
-            >;
-        };
-
-        symbol_layer {
-            // ----------------------------------------------------------------------------
-            // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-            // |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
-            // |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
-            //                       |     | ADJ | BKSP |    |     |
-
-            bindings = <
-&kp TILDE  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT              &kp PERCENT  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp DEL
-&trans     &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH             &kp PIPE     &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans     &kp CARET         &kp SLASH      &kp STAR          &kp BACKSLASH      &kp AT               &kp TILDE    &kp DOLLAR     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &trans
-                                            &trans            &mo 3                        &kp ENTER               &trans         &trans
+&kp TAB                &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_SHIFT ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI  &mt RSHIFT ENTER
+&kp LCTRL              &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sl 4
+                                     &mo 3  &sl 1         &kp SPACE         &sl 2  &kp RGUI
             >;
         };
 
         num_layer {
             bindings = <
-&trans  &trans  &trans     &kp ESC     &trans    &trans             &trans         &kp N7  &kp N8  &kp N9  &trans     &trans
-&trans  &trans  &sk LCTRL  &sk LGUI    &sk LALT  &trans             &kp N0         &kp N1  &kp N2  &kp N3  &kp ENTER  &trans
-&trans  &trans  &trans     &caps_word  &trans    &trans             &kp BACKSPACE  &kp N4  &kp N5  &kp N6  &trans     &trans
-                           &trans      &trans            &kp ENTER                 &mo 3   &trans
+&trans  &trans  &trans  &kp ESC     &trans  &trans             &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &kp N8  &kp N6  &kp N4      &kp N2  &kp N0             &kp N0         &kp N1  &kp N3  &kp N5  &kp N7  &trans
+&trans  &trans  &trans  &caps_word  &kp N8  &trans             &kp BACKSPACE  &kp N9  &trans  &trans  &trans  &trans
+                        &trans      &trans          &kp ENTER                 &sl 5   &trans
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&none  &kp BACKSLASH  &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &kp EXCL                     &kp QUESTION  &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &none     &none
+&none  &kp MINUS      &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH                     &kp PERCENT   &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp SEMI  &none
+&none  &none          &kp COLON             &kp STAR           &kp PLUS               &kp SINGLE_QUOTE             &kp PIPE      &kp AMPS          &kp CARET       &kp TILDE          &none     &none
+                                            &none              &sl 5                                    &kp ENTER                &none             &none
             >;
         };
 
@@ -80,9 +74,18 @@
         function_layer {
             bindings = <
 &kp F1  &kp F2            &kp F3      &kp F4      &kp F5      &kp F6              &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-&trans  &kp LG(NUMBER_1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)          &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &mo 5
+&trans  &kp LG(NUMBER_1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)          &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &mo 6
 &trans  &trans            &trans      &trans      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
                                       &trans      &trans                  &trans              &trans      &trans
+            >;
+        };
+
+        workspace_layer {
+            bindings = <
+&trans  &trans                 &trans                       &trans                       &trans                       &trans                         &trans                 &trans                             &trans                 &trans                 &trans                 &trans
+&trans  &mt LG(LS(N8)) LG(N8)  &mt LS(LG(N6)) LG(NUMBER_6)  &mt LG(LS(N4)) LG(NUMBER_4)  &mt LS(LG(N2)) LG(NUMBER_2)  &mt LS(LG(N0)) LG(N0)          &mt LS(LG(N0)) LG(N0)  &mt LS(LG(NUMBER_1)) LG(NUMBER_1)  &mt LG(LS(N3)) LG(N3)  &mt LG(LS(N5)) LG(N5)  &mt LG(LS(N7)) LG(N7)  &trans
+&trans  &trans                 &trans                       &caps_word                   &mt LS(LG(N8)) LG(N8)        &trans                         &kp BACKSPACE          &mt LS(LG(N9)) LG(N9)              &trans                 &trans                 &trans                 &trans
+                                                            &trans                       &trans                                              &trans                         &trans                             &trans
             >;
         };
 
@@ -97,16 +100,7 @@
 &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none   &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none   &none                    &none         &none         &none         &none         &none         &none
 &none            &none            &none            &none            &none   &none                    &sys_reset    &none         &none         &none         &none         &none
-                                                   &trans           &trans                   &tog 5                &trans        &trans
-            >;
-        };
-
-        new_symbol_layer {
-            bindings = <
-&none  &kp BACKSLASH  &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &kp EXCL                     &kp QUESTION  &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &none     &none
-&none  &kp MINUS      &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH                     &kp PERCENT   &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp SEMI  &none
-&none  &none          &kp COLON             &kp STAR           &kp PLUS               &kp SINGLE_QUOTE             &kp PIPE      &kp AMPS          &kp CARET       &kp TILDE          &none     &none
-                                            &none              &mo 3                                    &kp ENTER                &none             &none
+                                                   &trans           &trans                   &tog 6                &trans        &trans
             >;
         };
     };
