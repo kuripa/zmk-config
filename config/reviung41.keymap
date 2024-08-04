@@ -103,10 +103,10 @@
 
         new_symbol_layer {
             bindings = <
-&none  &none      &kp LEFT_BRACE        &kp DOLLAR         &kp RIGHT_BRACE        &trans                    &none        &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &none     &none
-&none  &kp MINUS  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH                  &kp PERCENT  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp SEMI  &none
-&none  &none      &kp COLON             &kp STAR           &kp PLUS               &kp BACKSLASH             &kp PIPE     &kp AMPS          &kp CARET       &kp TILDE          &none     &none
-                                        &none              &mo 3                                 &kp ENTER               &none             &none
+&none  &kp BACKSLASH  &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &kp EXCL                     &kp QUESTION  &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &none     &none
+&none  &kp MINUS      &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH                     &kp PERCENT   &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp SEMI  &none
+&none  &none          &kp COLON             &kp STAR           &kp PLUS               &kp SINGLE_QUOTE             &kp PIPE      &kp AMPS          &kp CARET       &kp TILDE          &none     &none
+                                            &none              &mo 3                                    &kp ENTER                &none             &none
             >;
         };
     };
